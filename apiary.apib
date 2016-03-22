@@ -1,11 +1,11 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://private-3d959d-majesticthai6.apiary-mock.com/
 
 # MajesticThai
 
 Majestic Thai is a simple API allowing developers to access data about our restaurant and menu.
 
-## Menu Item Collection [/menu]
+## Menu Item Collection [/menus]
 
 ### List All Items [GET]
 
@@ -13,124 +13,153 @@ Majestic Thai is a simple API allowing developers to access data about our resta
 
         [
             {
-                "menu": "Majestic Thai Dinner",
+                "name": "Majestic Thai Dinner",
                 "published_at": "2015-08-05T08:40:51.620Z",
-                "appetizers": [
+                "url": "/menus/1",
+                "items":
+                [   
                     {
-                        "id": "A_1",
+                        "url":"/menus/1/appetizers/1",
+                        "category":"appetizers",
+                        "id": "1",
                         "item": "Spring Rolls",
                         "price": 4.50,
                         "description": "Crispy vegetarian deep-fried spring rolls served with Thai sweet & sour sauce."
                     }, {
-                        "id":"A_2",
+                        "url":"/menus/1/appetizers/2",
+                        "category":"appetizers",
+                        "id":"2",
                         "item": "Fried Tofu",
                         "price": 5.95,
                         "description": "Special seasoned tofu, deep-fried and served with a Thai chili sauce."
                     }, {
-                        "id":"A_3",
+                        "url":"/menus/1/appetizers/3",
+                        "category":"appetizers",
+                        "id":"3",
                         "item": "Saytay Chicken",
                         "price": 5.95,
                         "description": "Chicken on skewers marinated in special Thai Seasoning and grilled to perfection."
-                    }, {
-                        "id":"A_4",
+                    },{
+                        "url":"/menus/1/appetizers/4",
+                        "category":"appetizers",
+                        "id":"4",
                         "item": "Fried Calamari",
                         "price": 6.95,
                         "description": "Special battered calamari with special seasoning and served with a Thai sweet chili sauce."
-                        }
-                ],
-                
-                "SoupsAndSalads": [
-                    {
-                        "id":"S_1",
+                    },{
+                        "url":"/menus/1/SoupsAndSalads/1",
+                        "category":"SoupsAndSalads",
+                        "id":"5",
                         "item": "tom-ka-gai",
                         "price": 4.50,
                         "description": "A combination of chicken,lemon grass,lime juice,cilantro,red onion,and mushroom in coconut milk blended with chicken broth."
                     }, {
-                        "id":"S_2",
+                        "url":"/menus/1/SoupsAndSalads/2",
+                        "category":"SoupsAndSalads",
+                        "id":"6",
                         "item": "tom-yum goong",
                         "price": 5.95,
                         "description": "Thai spicy shrimp soup with lemon grass, lime juice, chili paste, cilantro, red onion and mushroom."
                     },{
-                        "id":"S_3",
+                        "url":"/menus/1/SoupsAndSalads/3",
+                        "category":"SoupsAndSalads",
+                        "id":"7",
                         "item":"spicy shrimp salad",
                         "price":10.95,
                         "description":"Cooked shrimp tossed with lemon grass, chili paste, lime juice, red onion, cucumber, tomato, cilantro,and mixed greens."
                     },{
-                        "id":"S_4",
+                        "url":"/menus/1/SoupsAndSalads/4",
+                        "category":"SoupsAndSalads",
+                        "id":"8",
                         "item":"house salad",
                         "price":4.50,
                         "description":"Mixed greens, cucumber, tomato, red onion, bean sprout topped with fried tofu served with home-made Thai peanut dressing."
                     },{
-                        "id":"S_5",
+                        "url":"/menus/1/SoupsAndSalads/5",
+                        "category":"SoupsAndSalads",
+                        "id":"9",
                         "item":"beef salad",
                         "price":8.95,
                         "description":"Spicy beef salad in combination with charbroiled beef with chili paste, chili powder, cucumber, onion, tomato, cilantro, and mixed greens."
-                    }
-                ],
-                
-                "entrees":[
-                    { 
-                      "id":"E_1",
-                      "item": "mussamun curry",
-                      "price": 1095,
-                      "description": "Peanut Havored Mussamun curry paste in cream of coconut with white potato, sweet potato and onion topped with cashew nut" 
+                    },{ 
+                        "url":"/menus/1/entrees/1",
+                        "category":"entrees",
+                        "id":"10",
+                        "item": "mussamun curry",
+                        "price": 1095,
+                        "description": "Peanut Havored Mussamun curry paste in cream of coconut with white potato, sweet potato and onion topped with cashew nut" 
                     },{
-                      "id":"E_2",
-                      "item": "yellow curry",
-                      "price": 1095, 
-                      "description": "Thai yellow curry cooked in cream of coconut with potato, sweet potato, pineapple and onion."
+                        "url":"/menus/1/entrees/2",
+                        "category":"entrees",
+                        "id":"11",
+                        "item": "yellow curry",
+                        "price": 1095, 
+                        "description": "Thai yellow curry cooked in cream of coconut with potato, sweet potato, pineapple and onion."
                     },{
-                      "id":"E_3",
-                      "item": "green curry",
-                      "price": 1095,
-                      "description": "Sweet & Spicy green curry paste in cream of coconut with sweet basil, bamboo shoot, zucchini, green pea, snow pea, baby corn and eggplant."
+                        "url":"/menus/1/entress/3",
+                        "category":"entrees",
+                        "id":"12",
+                        "item": "green curry",
+                        "price": 1095,
+                        "description": "Sweet & Spicy green curry paste in cream of coconut with sweet basil, bamboo shoot, zucchini, green pea, snow pea, baby corn and eggplant."
                     },{
-                      "id":"E_4",
-                      "item": "panang salmon",
-                      "price": 1595, 
-                      "description": "Grilled salmon topped with Panang curry sauce with baby corn, carrot, zucchini, snow pea, and broccoli."
+                        "url":"/menus/1/entrees/4",
+                        "category":"entrees",
+                        "id":"13",
+                        "item": "panang salmon",
+                        "price": 1595, 
+                        "description": "Grilled salmon topped with Panang curry sauce with baby corn, carrot, zucchini, snow pea, and broccoli."
                     },{
-                      "id":"E_5",
-                      "item": "three-season snapper",
-                      "price": 1595, 
-                      "description": "Filet snapper deep-fried topped with special three-season sauce with vegetables."
+                        "url":"/menus/1/entrees/5",
+                        "category":"entrees",
+                        "id":"14",
+                        "item": "three-season snapper",
+                        "price": 1595, 
+                        "description": "Filet snapper deep-fried topped with special three-season sauce with vegetables."
                     },{
-                      "id":"E_6",
-                      "item": "garlic squid",
-                      "price": 1395, 
-                      "description": "Calamari stir-fried in delicious garlic n pepper sauce with broccoli, carrot, zucchini, onion, snow pea, baby corn, and cilantro."
+                        "url":"/menus/1/entrees/6",
+                        "category":"entrees",
+                        "id":"15",
+                        "item": "garlic squid",
+                        "price": 1395, 
+                        "description": "Calamari stir-fried in delicious garlic n pepper sauce with broccoli, carrot, zucchini, onion, snow pea, baby corn, and cilantro."
                     },{
-                      "id":"E_7",
-                      "item": "pad thai",
-                      "price": 1095, 
-                      "description": "Classic stir-fried rice noodle with egg, green onion, bean sprout and side of crush peanut and lime in special Pad Thai sauce."
-                    }           
-                ],
-                
-                "desserts":[
-                    {
-                        "id": "D_1",
+                        "url":"/menus/1/entrees/7",
+                        "category":"entrees",
+                        "id":"16",
+                        "item": "pad thai",
+                        "price": 1095, 
+                        "description": "Classic stir-fried rice noodle with egg, green onion, bean sprout and side of crush peanut and lime in special Pad Thai sauce."
+                    },{
+                        "url":"/menus/1/desserts/1",
+                        "category":"desserts",
+                        "id": "17",
                         "item":"Mango and Sticky Rice",
                         "price":5.95,
                         "description":"Fresh sweet mango along with sweet sticky rice topped with a splash of coconut milk"
-                    },{  
-                        "id": "D_2", 
+                    },{ 
+                        "url":"/menus/1/desserts/2",
+                        "category":"desserts",
+                        "id": "18", 
                         "item":"Fried Banana with ice cream",
                         "price":5.95,
                         "description":"Your choice of coconut,green tea or strawberry cheesecake ice cream along with fried banana topped with honey and ground cinnamon"
                     },{
-                      "id":"D_3",
-                      "item":"Mango and Sticky Rice",
-                      "price":5.95,
-                      "description":"Fresh sweet mango along with sweet sticky rice topped with a splash of coconut milk"
+                        "url":"/menus/1/desserts/3",
+                        "category":"desserts",
+                        "id":"19",
+                        "item":"Mango and Sticky Rice",
+                        "price":5.95,
+                        "description":"Fresh sweet mango along with sweet sticky rice topped with a splash of coconut milk"
                     }
                 ]
             }
         ]
 
-## Menu Item [/{item_ID}]
+## Menu Item [/menus/items/{id}]
 
-+ item_ID (string) - ID of the menu item. 
++ category (string) - category of the menu item. 
++ id (string) - item id. 
 
 ### View An Item [GET]
 
