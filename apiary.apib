@@ -15,7 +15,7 @@ Majestic Thai is a simple API allowing developers to access data about our resta
             {
                 "name": "Majestic Thai Dinner",
                 "published_at": "2015-08-05T08:40:51.620Z",
-                "url": "/menus/1",
+                "url": "/menus/",
                 "items":
                 [   
                     {
@@ -158,9 +158,76 @@ Majestic Thai is a simple API allowing developers to access data about our resta
 
 ## Menu Item [/menus/items/{id}]
 
-+ category (string) - category of the menu item. 
-+ id (string) - item id. 
++ id (number) - item id. 
 
 ### View An Item [GET]
 
 + Response 200 (application/json)
+
+                    {
+                        "url":"/menus/1/appetizers/1",
+                        "category":"appetizers",
+                        "id": "1",
+                        "item": "Spring Rolls",
+                        "price": 4.50,
+                        "description": "Crispy vegetarian deep-fried spring rolls served with Thai sweet and sour sauce.
+                    }
+                    
+## Order Collection [/orders]
+
+### List All Orders [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name": "Order Collection",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "url": "/orders,
+                "orders": 
+                [
+                    {
+                        "customerName":"Matt Murdock",
+                        "o_id": "1",
+                        "ordered_item_ids": [
+                        1,2,7,9
+                        ],
+                        "total-price": 21.50,
+                        
+                    }
+                    {
+                        "customerName":"Foggy Nelson",
+                        "o_id": "1",
+                        "ordered_item_ids": [
+                        5,2,12
+                        ]
+                        "total-price": 15.00,
+                        
+                    }
+                    {
+                        "customerName":"Karen Paige",
+                        "c_id": "1",
+                        "ordered_item_ids": [
+                        2,4,17
+                        ]
+                        "total-price": 33.50,
+                        
+                    }
+                ]
+            }
+        ]
+## Single Order [/orders/{o_id}]
+
+### Returns a Single Placed Order [GET]
+
++ Response 200 (application/json)
+
+                    {
+                        "customerName":"Matt Murdock",
+                        "c_id": "1",
+                        "ordered_item_ids": [
+                        1,2,7,9
+                        ],
+                        "total-price": 21.50,
+                        
+                    }
